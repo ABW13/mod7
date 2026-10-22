@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 .env
 chroma_demo/
+knowledge_base_db/
