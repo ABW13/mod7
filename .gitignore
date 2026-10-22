@@ -4,3 +4,4 @@ __pycache__/
 .env
 chroma_demo/
 knowledge_base_db/
+search_db/

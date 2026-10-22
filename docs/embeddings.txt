@@ -1,0 +1,5 @@
+An embedding is a list of numbers that represents the meaning of a piece of text. Texts with similar meaning produce vectors that point in similar directions.
+
+Cosine similarity measures the angle between two vectors rather than the distance between their endpoints. It is a common way to compare embeddings because it ignores how long the vectors are.
+
+Chunking splits a long document into smaller passages before embedding, because a single vector cannot represent a long document well. Fixed-size chunking is predictable, while paragraph chunking preserves complete ideas in well-structured text.

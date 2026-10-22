@@ -1,0 +1,7 @@
+Authentication verifies who a user is, while authorization decides what that user is allowed to do. An API needs both: proving identity, then checking permissions on each protected endpoint.
+
+JSON Web Tokens are a common way to authenticate API requests without keeping server-side sessions. A login endpoint checks the supplied credentials and returns a signed token. The client then sends that token in the Authorization header on every subsequent request.
+
+The server verifies the token's signature and expiration before honoring a request. Because the token itself carries the user's claims, the server does not need to look up a session record for each call. That is what makes the approach stateless.
+
+Tokens must be treated as secrets. Anyone holding a valid token can act as that user until it expires, so tokens are kept out of URLs, logs, and client-side storage that other scripts can read.

@@ -1,0 +1,5 @@
+SQLAlchemy is a Python ORM that maps classes to database tables. Instead of writing raw SQL for every operation, you define Python classes and SQLAlchemy translates operations into queries.
+
+A session tracks pending changes to objects. Changes are not written to the database until the session is committed. If something fails partway through, a rollback discards the pending changes as a unit.
+
+Migrations describe how a database schema changes over time. A migration tool applies those changes in order so that every environment ends up with the same structure.
