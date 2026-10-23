@@ -5,3 +5,4 @@ __pycache__/
 chroma_demo/
 knowledge_base_db/
 search_db/
+my_eval_db/
